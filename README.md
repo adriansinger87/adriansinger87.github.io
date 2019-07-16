@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+# Jekyll Materialize Starter Template v0.1
 
-You can use the [editor on GitHub](https://github.com/sin-net/Pages/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+*A Site Starter Materialize Templates.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The theme is a fork of the [minima][1]
 
-### Markdown
+![minima theme preview](/screenshot.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+# License
 
-# Header 1
-## Header 2
-### Header 3
+The theme is available as so I use this source [MIT License][2].
 
-- Bulleted
-- List
+[Materialize][3] a  modern responsive front-end framework based on Material Design
 
-1. Numbered
-2. List
+Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll</a>
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sin-net/Pages/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[1]: https://github.com/jekyll/minima
+[2]: https://opensource.org/licenses/MIT
+[3]: http://materializecss.com/
