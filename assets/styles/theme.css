@@ -1,3 +1,17 @@
+/* 
+ * START Materialize overrides 
+ */
+
 nav {
     background-color: black;
+}
+
+/* 
+ * END Materialize overrides 
+ */
+
+.site-logo {
+    width: 40px;
+    vertical-align: sub;
+    margin-right: 20px;
 }
