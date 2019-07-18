@@ -1,0 +1,64 @@
+/* 
+ * START Materialize overrides 
+ */
+body {
+    background-color: #263238;
+    color: #eceff1;
+}
+
+a {
+    color: #ffc107;
+}
+
+i {
+    font-size: x-large;
+}
+.banner {
+    -webkit-filter: grayscale(80%) opacity(80%) contrast(1.2); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%) opacity(80%) contrast(1.2);
+}
+
+nav {
+    background-color: #37474f;
+}
+nav ul a {
+    color: #ffc107;
+}
+.btn, .btn-large {
+    background-color: #ff8f00;
+}
+.btn:hover, .btn-large:hover {
+background-color: #ffc107;
+}
+
+.parallax-container {
+    height: 680px;
+    max-height: 100%;
+}
+
+.page-footer {
+    background-color: #37474f;
+}
+.collection {
+    border-color: #ffc107;
+}
+.collection .collection-item {
+    background-color: rgba(0,0,0,0.3);
+    border-bottom: 1px solid #ffc107;
+}
+.secondary-content {
+    color: #ffc107;
+}
+
+.divider {
+    background-color: rgba(0,0,0,0.3);
+}
+/* 
+ * END Materialize overrides 
+ */
+
+.site-logo {
+    width: 40px;
+    vertical-align: sub;
+    margin-right: 20px;
+}
