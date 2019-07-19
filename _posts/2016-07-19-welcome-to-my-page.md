@@ -1,7 +1,6 @@
 ---
 layout: post
 ---
-Welcome!
 
 Greetings from my fresh new web-page | blog | open source jekyll CMS.
 I was fooling around for months with CMS systems and jekyll templates - most of them were horrible.
