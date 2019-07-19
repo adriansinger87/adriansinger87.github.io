@@ -69,9 +69,19 @@ blockquote {
     max-height: 100%;
 }
 .banner {
-    -webkit-filter: grayscale(80%) opacity(80%) contrast(1.2); /* Safari 6.0 - 9.0 */
-    filter: grayscale(80%) opacity(80%) contrast(1.2);
+    /* -webkit-filter: grayscale(80%) contrast(1.2); /* Safari 6.0 - 9.0 */
+    filter: grayscale(60%) opacity(80%);
+    animation: 3s ease-in 0s 1 fadeIn;
 }
+@keyframes fadeIn {
+    0% {
+        filter: grayscale(100%) opacity(0%);
+    }
+    100% {
+        filter: grayscale(60%) opacity(80%);
+    }
+  }
+
 .sidenav-overlay {
     z-index: 1;
 }
