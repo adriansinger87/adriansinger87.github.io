@@ -6,7 +6,7 @@ body {
     color: #eceff1;
 }
 
-a {
+a, .btn-flat {
     color: #ffc107;
 }
 i {
@@ -34,6 +34,7 @@ nav ul a {
 .btn, .btn-large {
     background-color: #ff8f00;
 }
+
 .btn:hover, .btn-large:hover {
     background-color: #ffc107;
 }
@@ -67,9 +68,12 @@ table.highlight>tbody>tr:hover {
     -webkit-filter: grayscale(80%) opacity(80%) contrast(1.2); /* Safari 6.0 - 9.0 */
     filter: grayscale(80%) opacity(80%) contrast(1.2);
 }
+.sidenav-overlay {
+    z-index: 1;
+}
 
 .page-footer {
-    background-color: #37474f;
+    background-color: #131d23;
 }
 
 figure {
@@ -79,6 +83,15 @@ figure {
 }
 pre  {
     margin: 0px;
+}
+.modal {
+    border-radius: 0px;
+}
+.modal-content {
+    background-color: #263238;
+}
+.modal .modal-footer {
+    background-color: #37474f;
 }
 
 /* 
@@ -90,3 +103,34 @@ pre  {
     vertical-align: sub;
     margin-right: 20px;
 }
+.claim {
+    font-family:'Courier New', 'Courier', 'monospace';
+    margin: 75px auto 0em auto;
+}
+.typewriter h1 {
+    margin: 75px auto 0em auto;
+    width: 16em;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .1em solid #ff8f00; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(33, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0% }
+    to { width: 16em; }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .footer-copyright a {
+      color: #ffcc80;
+  }
