@@ -1,20 +1,20 @@
-# Jekyll Materialize Starter Template v0.1
+# `Sin.Net Pages`
 
-*A Site Starter Materialize Templates.
+## Jekyll Blog and web page
 
-The theme is a fork of the [minima][1]
+The page is used as a minimalistic personal web page and a blog for coding topics and to provide some infos about the [Sin.Net][3] project.
 
-![minima theme preview](/screenshot.png)
+The theme is a fork of [macrod68][1] and [minima][2].
 
+## License
 
-# License
+The repository is licensed under the [MIT License][4].
 
-The theme is available as so I use this source [MIT License][2].
+The page is powered by [Materialize][5], a modern responsive front-end framework based on Material Design and by [Jekyll][6], a database-less system to run static content and blogs the easy **and nerdy** way.
 
-[Materialize][3] a  modern responsive front-end framework based on Material Design
-
-Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll</a>
-
-[1]: https://github.com/jekyll/minima
-[2]: https://opensource.org/licenses/MIT
-[3]: http://materializecss.com/
+[1]: https://github.com/macrod68/minima
+[2]: https://github.com/jekyll/minima
+[3]: https://github.com/sin-net/Sin.Net
+[4]: https://github.com/sin-net/Pages/blob/master/LICENSE
+[5]: http://materializecss.com/
+[6]: http://jekyllrb.com

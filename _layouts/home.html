@@ -73,7 +73,7 @@ layout: default
   <section>
     <h5>Latest Posts</h5>
     <ul class="collection">
-      {% for post in site.posts %}
+      {% for post in site.posts limit:3 %}
       <li class="collection-item avatar">
         {% assign date_format = site.minima.date_format | default: "%m/%d" %}
         <div class="date-post circle z-depth-3">{{ post.date | date: date_format }}</div>
@@ -88,5 +88,4 @@ layout: default
       {% endfor %}
     </ul>
   </section>
-</div>
 </div>
