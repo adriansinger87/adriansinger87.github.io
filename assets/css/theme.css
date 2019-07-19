@@ -9,14 +9,10 @@ body {
 a {
     color: #ffc107;
 }
-
 i {
     font-size: x-large;
 }
-.banner {
-    -webkit-filter: grayscale(80%) opacity(80%) contrast(1.2); /* Safari 6.0 - 9.0 */
-    filter: grayscale(80%) opacity(80%) contrast(1.2);
-}
+
 
 nav {
     background-color: #37474f;
@@ -24,35 +20,67 @@ nav {
 nav ul a {
     color: #ffc107;
 }
+.divider {
+    background-color: rgba(0,0,0,0.2);
+}
+.sidenav {
+    background-color: #455a64;
+    color: white;
+}
+.sidenav li > a {
+    color: white;
+}
+
 .btn, .btn-large {
     background-color: #ff8f00;
 }
 .btn:hover, .btn-large:hover {
-background-color: #ffc107;
+    background-color: #ffc107;
+}
+.btn.disabled, .disabled.btn-large, .disabled.btn-floating {
+    background-color:  #424242 !important;
+}
+
+table.striped>tbody>tr:nth-child(odd) { 
+    background-color: rgba(0,0,0,0.3);
+}
+table.highlight>tbody>tr:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.collection {
+    border-color: #03a9f4;
+}
+.collection .collection-item {
+    background-color: rgba(0,0,0,0.3);
+    border-bottom: 1px solid #03a9f4;
+}
+.secondary-content {
+    color: #ffc107;
 }
 
 .parallax-container {
     height: 680px;
     max-height: 100%;
 }
+.banner {
+    -webkit-filter: grayscale(80%) opacity(80%) contrast(1.2); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%) opacity(80%) contrast(1.2);
+}
 
 .page-footer {
     background-color: #37474f;
 }
-.collection {
-    border-color: #ffc107;
-}
-.collection .collection-item {
+
+figure {
+    border: 1px solid #03a9f4;
+    padding: 10px;
     background-color: rgba(0,0,0,0.3);
-    border-bottom: 1px solid #ffc107;
 }
-.secondary-content {
-    color: #ffc107;
+pre  {
+    margin: 0px;
 }
 
-.divider {
-    background-color: rgba(0,0,0,0.3);
-}
 /* 
  * END Materialize overrides 
  */
