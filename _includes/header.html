@@ -31,10 +31,10 @@
   </nav>
   <ul id="slide-out" class="sidenav">
       <li><a class="waves-effect waves-light" href="{{ "/" | relative_url }}">Home</a></li>
-      <li><a class="waves-effect waves-light" href="{{ "/articles" | relative_url }}">Articles</a></li>
       <li>
         <div class="divider"></div>
       </li>
+      <li><a class="waves-effect waves-light" href="{{ "/articles" | relative_url }}">Articles</a></li>
       {% if page_paths %}
       {% for path in page_paths %}
       {% assign my_page = site.pages | where: "path", path | first %}
