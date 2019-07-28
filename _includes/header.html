@@ -3,8 +3,7 @@
     <div class="nav-wrapper container">
       <div class="hide-on-med-and-down">
         <a id="logo-container" class="brand-logo left" href="{{ "/" | relative_url }}">
-          <img class="site-logo " src="{{ "/assets/img/white_box.svg" | relative_url }}">
-          Sin.Net</a>
+          <img class="site-logo " src="{{ "/assets/img/white_box.svg" | relative_url }}">&nbsp; Sin.Net</a>
 
         {% assign default_paths = site.pages | map: "path" %}
         {% assign page_paths = site.header_pages | default: default_paths %}
