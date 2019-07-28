@@ -17,8 +17,7 @@ My name is Adrian and I live and work in Chemnitz.
     <div class="col s12 m9 l10">
     I work since July 2015 as scientific staff at the <a target="_blank" href="https://www.iwu.fraunhofer.de/">Fraunhofer-Institute for forming technology and tooling machines</a>.
     My main job is managing software projects in the factory domain for research or industrial applications.
-    I also develop applications and software-architectures in small teams.
-    At some point my projects find their way to the open source community.
+    I also develop applications and software architectures in small teams. Sometimes my projects find their way to the open source community.
     </div>
 </div>
 
@@ -141,12 +140,12 @@ I also run a private webserver with some pages and services. - So a I'm clearly 
         <td>The web page <a href="http://www.wargaz-vikings.de" target="_blank">wargaz-vikings.de</a> which shows one my hobbies.</td>
     </tr>
     <tr>
-        <td>Th great blog <a href="http://www.julinaeht.de" target="_blank">julinaeht.de</a>, driven by my girlfriend.</td>
+        <td>The great blog <a href="http://www.julinaeht.de" target="_blank">julinaeht.de</a>, driven by my girlfriend.</td>
     </tr>
 </table>
 
 > **Living history**: I share this really fascinating hobby with lot's of good friends. Together we call us the **Wargaz-Vikings**.
-
-The attentive reader was already on our website <a href="http://www.wargaz-vikings.de" target="_blank">wargaz-vikings.de</a>.
-Here you can find some impressions what's going on in our clan.
-I will share private pictures only rarely, so that I don't have to update this content very often. - And because this is not social media. ;-)  
+> The attentive reader was already on our website <a href="http://www.wargaz-vikings.de" target="_blank">wargaz-vikings.de</a>.
+> There you can find some impressions what's going on in our clan.
+> I will share private pictures only rarely, so that I don't have to update this kind of content very often. - And because this is not social media.
+<i class="mdi mdi-emoticon-outline" style="font-size: inherit"></i>
