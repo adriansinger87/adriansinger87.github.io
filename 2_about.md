@@ -11,8 +11,8 @@ My name is Adrian and I live and work in Chemnitz.
 ##### My daily Work
 
 <div class="row">
-    <div class="col s12 m3 l2">
-        <img alt="me" width="100%" src="{{ "/assets/img/me.jpg" | relative_url }}" />
+    <div class="col s12 m3 l2 center">
+        <img alt="me" width="100%" class="z-depth-3" src="{{ "/assets/img/me.jpg" | relative_url }}" />
     </div>
     <div class="col s12 m9 l10">
     I work since July 2015 as scientific staff at the <a target="_blank" href="https://www.iwu.fraunhofer.de/">Fraunhofer-Institute for forming technology and tooling machines</a>.
