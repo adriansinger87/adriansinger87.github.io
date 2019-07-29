@@ -126,8 +126,8 @@ Unfortunately, this list isn't complete yet, but I promise that I will update it
 
 #### My Balance
 
-I spend my free time mostly with my two kids, my girlfrient and my friends.
-I also run a private webserver with some pages and services. - So a I'm clearly a bit of a geek.
+I spend my free time mostly with my two kids, my girlfriend and my friends.
+I also run a private webserver with some pages and services. - So I'm clearly a bit of a geek.
 
 <table class="striped">
     <tr>
