@@ -101,8 +101,19 @@ figure {
     padding: 10px;
     background-color: rgba(0,0,0,0.3);
 }
+
 pre  {
     margin: 0px;
+    padding: 10px;
+}
+
+pre > code {
+    white-space: inherit;
+    border:none;
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 3px;
+    line-height: initial !important;
 }
 
 code {
@@ -113,7 +124,9 @@ code {
     background-color: rgba(0,0,0,0.3);
     margin-right: 2px;
     white-space: nowrap;
+    line-height: initial !important;
 }
+
 hr {
     display: block;
     height: 1px;
@@ -139,8 +152,6 @@ hr {
 /* 
  * END Materialize overrides 
  */
-
-
 
 .site-logo {
     width: 40px;

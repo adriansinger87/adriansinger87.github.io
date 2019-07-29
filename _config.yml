@@ -9,3 +9,5 @@ github_username:  adriansinger87
 
 sass:
     style: compressed
+
+highlighter: rouge

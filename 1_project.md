@@ -106,4 +106,6 @@ please take a deeper look into the videos or blog posts of <a target="_blank" hr
 And if you like to test some ready-to-go assemblies that follow these principles,
 please <a target="_blank" href="https://www.nuget.org/packages?q=Sin.Net">download</a> the Sin.Net assemblies and use them according to your requirements.
 
-> Have a nice day!
+---
+
+Have a nice day!
