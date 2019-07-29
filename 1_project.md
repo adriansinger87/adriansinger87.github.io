@@ -71,18 +71,20 @@ Now I will state out some principles for each layer. Please note that this list 
     </li>
 </ul>
 
-##### Attention Zone
+<h5 class="attention">Attention Zone</h5> 
 
 As you might see, the Sin.Net assemblies are bypassing the application layer. That is - of course - because I can't provide this layer to you. Maybe if you pay me.
 <i class="mdi mdi-emoticon-outline" style="font-size: inherit"></i>
 But if you decide to use the <a target="_blank" href="https://www.nuget.org/packages/Sin.Net.Domain/">Sin.Net.Domain.dll</a> it makes sense to build your upper layer's based on its interfaces and abstractions. In the best case you just use the other assemblies too and maybe extend them within your own layers. 
 
 This could be a potentional (and most comprehensive) implementation of the Sin.Net Project.
+What's also not illustrated here, is a project for unit testing your app, but you should definitely have one.
 
 <div class="mermaid">
 graph TB
     A[Your.Project.Presentation] --> B[Your.Project.Infrastructure]
     A --> D[Your.Project.Persistence]
+    A --> I[Sin.Net.Logging]
     subgraph
     D --> E[Sin.Net.Persistence]
     end

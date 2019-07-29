@@ -86,8 +86,14 @@ blockquote {
     z-index: 1;
 }
 
+.chip {
+    background-color:  rgba(0,0,0,0.3);
+    color: #eceff1;
+    white-space: nowrap;
+}
 .page-footer {
     background-color: #131d23;
+    margin-top: 20px;
 }
 
 figure {
@@ -128,7 +134,7 @@ hr {
 .ul-md, .ul-md > li {
     list-style-type: disc !important;
     margin-left: 10px;
- }
+}
 
 /* 
  * END Materialize overrides 
@@ -173,6 +179,9 @@ hr {
       color: #ffcc80;
   }
 
+.attention {
+    color: #ff7043;
+}
 /* meramid overrides */
 
 svg {

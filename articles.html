@@ -2,28 +2,54 @@
 layout: default
 ---
 
-
 <div class="container last-post">
   <h1 class="page-title">All Articles</h1>
   <h6>
-    Here you will find all my recent blog posts. Feel free and contact me if you like (or dislike) the content or if you have any further questions. 
+    Here you will find all my recent blog posts. Feel free and contact me if you like (or dislike) the content or if you
+    have any further questions.
   </h6>
   <br /><br />
-  <section>
-    <ul class="collection">
-      {% for post in site.posts %}
-      <li class="collection-item avatar">
-        {% assign date_format = site.minima.date_format | default: "%m/%d" %}
-        <div class="date-post circle z-depth-3">{{ post.date | date: date_format }}</div>
-        <span class="title"><a class="post-link"
-            href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
-        <p>
-          {{ post.content | truncatewords: 50 }}
-        </p>
-        <a href="{{ post.url | relative_url }}" class="secondary-content"><i
-            class="material-icons">navigate_next</i></a>
-      </li>
+
+  <div class="row">
+    <div class="col s12 m8 l9">
+      <h5><i class="mdi mdi-clock-fast"></i> Latest Posts</h5>
+      <ul class="collection">
+        {% for post in site.posts limit:5 %}
+        <li class="collection-item avatar">
+          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+          <div class="date-post circle z-depth-3">{{ post.date | date: date_format }}</div>
+          <span class="title"><a class="post-link"
+              href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
+          <p>
+            {{ post.content | truncatewords: 50 }}
+          </p>
+          <a href="{{ post.url | relative_url }}" class="secondary-content"><i
+              class="material-icons">navigate_next</i></a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="col s12 m4 l3">
+      {% for category in site.categories %}
+      <div class="archive-group">
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <div id="#{{ category_name | slugize }}"></div>
+
+        <h5 class="category-head">
+          <i class="mdi mdi-tag-outline"></i> {{ category_name }}
+        </h5>
+        <a name="{{ category_name | slugize }}"></a>
+        {% for post in site.categories[category_name] %}
+        <article class="archive-item">
+          {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
+          <div class="chip"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: date_format }} -
+              {{ post.title | escape }}</a></div>
+        </article>
+        {% endfor %}
+      </div>
       {% endfor %}
-    </ul>
-  </section>
+    </div>
+    </section>
+  </div>
 </div>
