@@ -1,7 +1,7 @@
 ---
 title: API Documentation with DocFX
 layout: post
-author: Adrian
+author: Adrian Singer
 description: Automated API generation for C# with DocFX
 categories: Web
 tags: [DocFX, C#, Documentation]
@@ -53,4 +53,4 @@ So now I only need to find the time to fill the empty holes in my docu, to apply
 
 I <span class="attention">strongly recommend</span> that you as a programmer keep your code documentation up-to-date wheather you serve it to the outer world or not. Try it at least <i class="mdi mdi-emoticon-outline" style="font-size: inherit"></i>.
 
-The reason should be obvoius, but to be clear: It is one of the more importent duties as developer to have a consistent documentation, especially when you write code for professional apps. And your team members will thank you!
+The reason should be obvoius, but to be clear: It is one of the more important duties as developer to have a consistent documentation, especially when you write code for professional apps. And your team members will thank you!
