@@ -1,10 +1,11 @@
 ---
 layout: page
-title: Project
+title: Sin.Net Project
+description: Sin.Net is an open source project to build up clean architectures.
 permalink: /project/
 ---
 
-<h1 class="page-title">The Sin.Net {{ page.title | escape }}</h1>
+<h1 class="page-title">The {{ page.title | escape }}</h1>
 
 <div class="row">
     <div class="col s12 m3 l2 center">

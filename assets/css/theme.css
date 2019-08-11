@@ -149,6 +149,14 @@ hr {
     margin-left: 10px;
 }
 
+span.badge-tag {
+    background-color: rgba(100,100,100,0.3);
+    color: #03a9f4;
+    border-radius: 3px;  
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+}
+
 /* 
  * END Materialize overrides 
  */

@@ -2,7 +2,7 @@ title: Sin.Net
 claim: '{Code} [Blog] _Live_'
 author: Adrian Singer
 email: adriansinger87@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   A Site for projects and blog post
 
 github_username:  adriansinger87
@@ -11,3 +11,8 @@ sass:
     style: compressed
 
 highlighter: rouge
+
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-seo-tag
