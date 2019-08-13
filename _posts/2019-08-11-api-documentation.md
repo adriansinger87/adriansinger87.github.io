@@ -5,6 +5,7 @@ author: Adrian Singer
 description: Automated API generation for C# with DocFX
 categories: Web
 tags: [DocFX, C#, Documentation]
+commentid: 1
 music-text: Frog Leap Studios - Hurt (cover by Leo Moracchioli)
 music-href: https://youtu.be/JoeCmeD_6Pw
 ---

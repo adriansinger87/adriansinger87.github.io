@@ -1,0 +1,26 @@
+{% for post in site.posts %}
+{% if post.categories == page.categories %}
+{% if post.title != page.title %}
+{% assign related = true %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+{% if related == true %}
+
+<h6>See also</h6>
+<ul>
+    {% for post in site.posts %}
+    {% if post.categories == page.categories %}
+    {% if post.title != page.title %}
+    <li>
+        {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
+        <div class="chip"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: date_format }} -
+                {{ post.title | escape }}</a></div>
+    </li>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+</ul>
+
+{% endif %}

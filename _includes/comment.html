@@ -1,0 +1,67 @@
+{% if page.commentid %}
+
+<hr>
+
+<h5><i class="mdi mdi-message-text-outline left"></i>Leave a comment</h5>
+
+<div id="gh-comments" style="display:none;">
+    <div class="row">
+        <div id="gh-comment-col" class="col s12 m6 l6">
+            Visit <a id="gh-comment-link" class='btn waves-effect waves-light' href='' target="_blank">
+                <i class="mdi mdi-github-circle left"></i>Github</a>
+            to comment.
+        </div>
+        <div class="col s12 m6 l6">
+            Drop an <a id="gh-comment-email" class='btn waves-effect waves-light' href=''><i class="mdi mdi-email-edit-outline left"></i>Email</a>
+            to the author.
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <div id="gh-comment-list" class="row">
+    </div>
+</div>
+
+<script>
+    var url = "https://github.com/sin-net/Pages/issues/" + {{ page.commentid }}
+    var api_url = "https://api.github.com/repos/sin-net/Pages/issues/" + {{ page.commentid }} + "/comments"
+
+    $(document).ready(function () {
+        $.ajax(api_url, {
+            headers: { Accept: "application/vnd.github.v3.html+json" },
+            dataType: "json",
+            success: function (comments) {
+                $("#gh-comment-link").attr('href', url);
+                $("#gh-comment-email").attr('href', 'mailto:adriansinger87@gmail.com?subject=Sin.Net Blog {{page.title}}');
+                $.each(comments, function (i, comment) {
+                    var date = new Date(comment.created_at);
+                    var t = "<div id='gh-comment-entry' class'col s12'>";
+
+                    t += "<div class='card blue-grey darken-3'>";
+                    t += "<div class='card-content white-text'>";
+                    t += "<span class='card-title'>";
+                   
+                    t += "</span>";
+                    t += "<p>" + comment.body_html + "</p>"
+                    t += "</div>";
+                    t += "<div class='card-action valign-wrapper'>";
+                    t += "<img class='comment-img circle' src='" + comment.user.avatar_url + "' />";
+                    t += "<a href='" + comment.user.html_url + "'>" + comment.user.login + "</a>";
+                    t += "<span class='thin'>Posted at " + date.toLocaleString() + "</span>";
+                    t += "</div>";
+                    t += "</div>";
+                    t += "</div>";
+                    $("#gh-comment-list").append(t);
+                });
+                $("#gh-comments").show();
+            },
+            error: function () {
+                $("#gh-comment-col").remove();
+                $("#gh-comments").show();
+            }
+        });
+    });
+</script>
+
+{% endif %}

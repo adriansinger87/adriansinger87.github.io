@@ -30,47 +30,21 @@ layout: default
         {{ content }}
 
         <hr>
+
+        <div class="row">
+            <div class="col s12 thin">
+                Writing this post was supported with music from
+                <a target="_blank" href="{{ page.music-href }}">{{ page.music-text }}</a>.
+                <br />
+                Have a nice day!
+              </div>
+        </div>
         
-        Writing this post was supported with music from
-        <a target="_blank" href="{{ page.music-href }}">{{ page.music-text }}</a>.
-        <br />
-        Have a nice day!
+        {% include post_related.html %}
 
-        {% for post in site.posts %}
-        {% if post.categories == page.categories %}
-        {% if post.title != page.title %}
-        {% assign related = true %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-
-        {% if related == true %}
-        <h6>See also:</h6>
-        <ul>
-          {% for post in site.posts %}
-          {% if post.categories == page.categories %}
-          {% if post.title != page.title %}
-          <li>
-            {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
-            <div class="chip"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: date_format }} -
-                {{ post.title | escape }}</a></div>
-          </li>
-          {% endif %}
-          {% endif %}
-          {% endfor %}
-        </ul>
-        {% endif %}
+        {% include comment.html %}
 
       </div>
-
-      {% if site.disqus.shortname %}
-      {% include disqus_comments.html %}
-      {% endif %}
     </article>
   </div>
-
-
-
-
-
 </div>
