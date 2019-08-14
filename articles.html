@@ -14,19 +14,45 @@ layout: default
   <div class="row">
     <div class="col s12 m8 l9">
       <h5><i class="mdi mdi-clock-fast"></i> Latest Posts</h5>
-      <ul class="collection">
-        {% for post in site.posts limit:5 %}
-        <li class="collection-item avatar">
-          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+      <!-- <ul class="collection"> -->
+      {% for post in site.posts limit:5 %}
+      {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+
+      <div class="card medium">
+        <div class="card-image">
+          <a class="waves-effect waves-light" href="{{ post.url | relative_url }}">
+            <img src="{{ post.image | relative_url }}" />
+          </a>
+        </div>
+        <div class="card-content">
+          <span class="card-title" style="font-weight: 500">{{ post.title | escape }}</span>
+          {{ post.content | truncatewords: 18 }}
+        </div>
+        <div class="card-action">
+          <span datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            {{ post.date | date: date_format }}
+          </span>
+          {% if post.author %}
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">{{ post.author }}</span></span>
+          {% endif %}
+          <a class="right" href="{{ post.url | relative_url }}">Read</a>
+        </div>
+      </div>
+
+      <!-- <li class="collection-item avatar">
           <div class="date-post circle z-depth-3">{{ post.date | date: date_format }}</div>
           <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
           <p>
             {{ post.content | truncatewords: 50 }}
           </p>
           <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
-        </li>
-        {% endfor %}
-      </ul>
+        </li> -->
+
+
+      {% endfor %}
+      <!-- </ul> -->
     </div>
 
     <div class="col s12 m4 l3">

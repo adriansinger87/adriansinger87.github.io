@@ -3,6 +3,7 @@ title: API Documentation with DocFX
 layout: post
 author: Adrian Singer
 description: Automated API generation for C# with DocFX
+image: /assets/img/posts/documentation-1.jpg
 categories: Web
 tags: [DocFX, C#, Documentation]
 commentid: 1
