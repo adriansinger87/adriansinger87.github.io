@@ -6,18 +6,22 @@
 
 <div id="gh-comments" style="display:none;">
     <div class="row">
-        <div id="gh-comment-col" class="col s12 m6 l6">
+        <div class="col s12 m6 l6 gh-comment-notes">
             Visit <a id="gh-comment-link" class='btn waves-effect waves-light' href='' target="_blank">
                 <i class="mdi mdi-github-circle left"></i>Github</a>
             to comment.
+            <br />
+            
         </div>
         <div class="col s12 m6 l6">
             Drop an <a id="gh-comment-email" class='btn waves-effect waves-light' href=''><i class="mdi mdi-email-edit-outline left"></i>Email</a>
             to the author.
         </div>
     </div>
-    <div>
-
+    <div class="row gh-comment-notes">
+        <div class="col s12">
+            <a class="thin" target="_blank" href="http://donw.io/post/github-comments/">Why GitHub?</a>
+        </div>
     </div>
     <div id="gh-comment-list" class="row">
     </div>
@@ -57,7 +61,7 @@
                 $("#gh-comments").show();
             },
             error: function () {
-                $("#gh-comment-col").remove();
+                $(".gh-comment-notes").remove();
                 $("#gh-comments").show();
             }
         });
