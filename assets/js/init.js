@@ -11,7 +11,7 @@
 
   function InitImage() {
     var loc = window.location.href;
-    $("#chemnitz-banner").attr("src", loc + "/assets/img/banner_" + Random(1,4) + ".jpg");
+    $("#chemnitz-banner").attr("src", loc + "/assets/img/banner_" + Random(1,5) + ".jpg");
 
     function Random(min, max) {
       min = Math.ceil(min);
