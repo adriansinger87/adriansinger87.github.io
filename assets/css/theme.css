@@ -250,3 +250,25 @@ g > path {
     width: 32px;
     margin-right: 0.7em;
 }
+
+.lazy {
+    -webkit-animation: fadeinLoad 1s 3.5s forwards;
+    animation: fadeinLoad 1s 3.5s forwards;
+    opacity: 0;
+  }
+  @-webkit-keyframes fadeinLoad {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeinLoad {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

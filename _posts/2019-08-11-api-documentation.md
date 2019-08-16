@@ -14,7 +14,7 @@ music-href: https://youtu.be/JoeCmeD_6Pw
 In the past days I have worked on auto generated code documentations for some of my projects.
 Luckily, all of these project types are written in `C#`, therefore I needed to find only one proper tool that would fit all my projects. So it was time to find an up-to-date framework to help me out.
 
-###### **This is the result of my [Sin.Net API Documentation](https://sin-net.github.io/Sin.Net/api/Sin.Net.Domain.Config.html).**
+###### **Here is a shortcut to the result of my [Sin.Net API Documentation](https://sin-net.github.io/Sin.Net/api/Sin.Net.Domain.Config.html).**
 
 But first things first: It is typical for `C#` to write [XML comments](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/) above your classes, members and properties like seen below. Visual Studio generates them by typing `///`.
 
