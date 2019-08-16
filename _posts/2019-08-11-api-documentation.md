@@ -31,15 +31,18 @@ public int Foo(int bar)
 ```
 
 These comments can now be used to generate an API documentation with different tools.
-I know several of them, but I wanted to give [DocFX](https://dotnet.github.io/docfx/) a chance.
-It generates a static website with a low complexity and allows to add additional pages. DocFX is also maintained by Microsoft and having everything out of one box seems to be a good idea so far.
+I know some of them, but I wanted to give [DocFX](https://dotnet.github.io/docfx/) a chance.
+It generates a static website with a low complexity and allows to add additional pages and apply different themes. DocFX is also maintained by Microsoft and having everything out of one box seems to be a good idea so far.
 <i class="mdi mdi-emoticon-outline" style="font-size: inherit"></i>
 
 [Getting started](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html) was quite easy:
-1. I added the NuGet package `docfx.console` to one of my projects, seen [here](https://www.nuget.org/packages/docfx.console/).
-2. I created the source files by running the `docfx init -q` command in the packet manger console.
-3. In the next step, I renamed the generated docfx project and added it to my solution as an existing website.
-3. Lastly, I adjusted the `docfx.json` to my needs and [here we are](https://sin-net.github.io/Sin.Net).
+
+1. I added a `.NET Standard` project have removed the existing C# file.
+2. Then I added the NuGet package `docfx.console` to this project. Thereby you don't affect the rest of your solution with this dependency. You can read more about the package [here](https://www.nuget.org/packages/docfx.console/). 
+3. I created the source files by running the `docfx init -q` command in the packet manger console.
+4. In the next step, I moved all generated files into the empty docu-project.
+I recommend to disable the build processes for Debug and Release mode for this docu-project.
+5. Lastly, I adjusted the `docfx.json` to my needs and [here we are](https://sin-net.github.io/Sin.Net).
 
 <ul class="ul-md">
     <li>
