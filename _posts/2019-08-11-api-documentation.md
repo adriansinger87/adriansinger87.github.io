@@ -37,7 +37,7 @@ It generates a static website with a low complexity and allows to add additional
 
 [Getting started](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html) was quite easy:
 
-1. I added a `.NET Standard` project have removed the existing C# file.
+1. I added a `.NET Standard` project and have removed the existing C# file.
 2. Then I added the NuGet package `docfx.console` to this project. Thereby you don't affect the rest of your solution with this dependency. You can read more about the package [here](https://www.nuget.org/packages/docfx.console/). 
 3. I created the source files by running the `docfx init -q` command in the packet manger console.
 4. In the next step, I moved all generated files into the empty docu-project.
