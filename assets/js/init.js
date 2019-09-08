@@ -4,7 +4,8 @@
     M.AutoInit();
     $('.sidenav').sidenav();
     $('.modal').modal();
-
+    $('.materialboxed').materialbox();
+    
     InitImage();
 
   }); // end of document ready

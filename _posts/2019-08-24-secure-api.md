@@ -2,7 +2,7 @@
 title: Secure Access of APIs
 layout: post
 author: Adrian Singer
-description: How to implement access security of your C# APIs with Sin.Net
+description: This post is about the easy implementation of security for your C# APIs with Sin.Net.
 image: /assets/img/posts/secure-api-1.jpg
 categories: Sin.Net
 tags: [Sin.Net, C#, Security]
