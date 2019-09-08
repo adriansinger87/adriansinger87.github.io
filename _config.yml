@@ -7,6 +7,8 @@ description: >
 
 github_username:  adriansinger87
 
+future: false
+
 sass:
     style: compressed
 
