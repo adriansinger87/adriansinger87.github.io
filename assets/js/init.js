@@ -6,8 +6,6 @@
     $('.modal').modal();
     $('.materialboxed').materialbox();
     
-    InitImage();
-
   }); // end of document ready
 
   function InitImage() {
