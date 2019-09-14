@@ -6,21 +6,39 @@
 {% endif %}
 {% endfor %}
 
-{% if related == true %}
-
-<h6>See also</h6>
-<ul>
-    {% for post in site.posts %}
-    {% if post.categories == page.categories %}
-    {% if post.title != page.title %}
-    <li>
-        {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
-        <div class="chip"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: date_format }} -
-                {{ post.title | escape }}</a></div>
-    </li>
+<div class="row">
+    {% if related == true %}
+    <div class="col s12 m8 l6">
+        <h6>See also</h6>
+        <ul>
+            {% for post in site.posts %}
+            {% if post.categories == page.categories %}
+            {% if post.title != page.title %}
+            <li>
+                {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
+                <div class="chip"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: date_format }} -
+                        {{ post.title | escape }}</a></div>
+            </li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
     {% endif %}
-    {% endif %}
-    {% endfor %}
-</ul>
+    <div class="col s12 m4 l6">
+        <h6>Share this</h6>
+        <div id="share-buttons">
+            <a class="btn blue darken-4" onclick="window.open('http://www.facebook.com/share.php?u={{ site.url }}{{ pageurl }}');">
+            <i class="mdi mdi-facebook"></i></a>
+            <a class="btn blue" title="Share this on Twitter" onclick="window.open('http://twitter.com/home?status={{ site.url }}{{ pageurl }}');">
+            <i class="mdi mdi-twitter"></i></a>
+            <a class="btn light-blue darken-3" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ pageurl }}&title=&summary=&source=');">
+            <i class="mdi mdi-linkedin-box"></i></a>
+            <a class="btn red" title="Share this on Google Plus" onclick="window.open('https://plus.google.com/share?url={{ site.url }}{{ pageurl }}');">
+            <i class="mdi mdi-google-plus"></i></a>
+            <a class="btn blue-grey" title="Share this through Email" onclick="window.open('mailto:?&body={{ site.url }}{{ pageurl }}');">
+            <i class="mdi mdi-email-outline"></i></a>
+        </div>
 
-{% endif %}
+    </div>
+</div>
