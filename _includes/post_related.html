@@ -25,20 +25,13 @@
         </ul>
     </div>
     {% endif %}
-    <div class="col s12 m4 l6">
-        <h6>Share this</h6>
-        <div id="share-buttons">
-            <a class="btn blue darken-4" onclick="window.open('http://www.facebook.com/share.php?u={{ site.url }}{{ pageurl }}');">
-            <i class="mdi mdi-facebook"></i></a>
-            <a class="btn blue" title="Share this on Twitter" onclick="window.open('http://twitter.com/home?status={{ site.url }}{{ pageurl }}');">
-            <i class="mdi mdi-twitter"></i></a>
-            <a class="btn light-blue darken-3" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ pageurl }}&title=&summary=&source=');">
-            <i class="mdi mdi-linkedin-box"></i></a>
-            <a class="btn red" title="Share this on Google Plus" onclick="window.open('https://plus.google.com/share?url={{ site.url }}{{ pageurl }}');">
-            <i class="mdi mdi-google-plus"></i></a>
-            <a class="btn blue-grey" title="Share this through Email" onclick="window.open('mailto:?&body={{ site.url }}{{ pageurl }}');">
-            <i class="mdi mdi-email-outline"></i></a>
-        </div>
 
+    <div class="col s12 m4 l6">
+        {% assign link = site.url | append: site.baseurl | append: page.url %}
+        <h6>Share this</h6>
+        <a class="btn blue-grey" href="mailto:?subject={{ site.title }}%20{{ page.title }}&body=Check out this article: {{ link }}.">
+            <i class="mdi mdi-email-outline"></i></a>
+        <a class="btn blue-grey darken-2" onclick="copyTextToClipboard( '{{ link }}' )">
+            <i class="mdi mdi-content-copy"></i></a>
     </div>
 </div>
