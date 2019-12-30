@@ -7,8 +7,8 @@ image: /assets/img/posts/classic-vs-agile-1.jpg
 categories: DevOps
 tags: [PMP, Agile Methods, DevOps]
 commentid: 5
-music-text: Seeed - Molotov
-music-href: https://youtu.be/SGkxBxMlS3U
+music-text: Tool - Sober
+music-href: https://www.youtube.com/watch?v=nspxAG12Cpc
 ---
 
 The term **project management** (PM) is used by many people in totally different ways. I also call myself a project manager because in 2016 I had a training course on "practical knowledge for project management" and I am responsible for several IT-projects. In the recent past it became anoying to me reading articles about PM in the web or trying things out that have different baselines.
