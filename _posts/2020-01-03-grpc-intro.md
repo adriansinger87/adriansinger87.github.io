@@ -6,7 +6,7 @@ description: gRPC is a quite new framework to execute functions of external appl
 image: /assets/img/posts/grpc-intro-1.jpg
 categories: Web
 tags: [gRPC, C#, GitHub]
-commentid: -1
+commentid: 6
 music-text: System Of A Down - Aerials
 music-href: https://www.youtube.com/watch?v=L-iepu3EtyE
 ---
