@@ -85,6 +85,7 @@ message LocationDetails {
   double latitude = 4;
 }
 ```
+
 ###### The gRPC Server
 The implementation of the server code is really straight foward. You can find the [IpGeoServer.cs](https://github.com/adriansinger87/GrpcGeo/blob/master/GrpcGeo.Server/IpGeoServer.cs) as full working source code on GitHub. I created a separate server class that implements the generated base class `IpLocatorBase` of the service definition. The server class encapsulates the gRPC logic, so its usage looks really simple, like seen in the [Program.cs](https://github.com/adriansinger87/GrpcGeo/blob/master/GrpcGeo.Server/Program.cs). This separation is important to apply a clean architecture approach.
 
