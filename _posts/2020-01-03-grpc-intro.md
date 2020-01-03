@@ -95,9 +95,9 @@ The client code is even simpler, because there is only the [Program.cs](https://
 ##### Conclusion
 
 In a more and more connected world, easy to use and easy maintainable technologies are very important for data exchange.
-In my opinion, the gRPC Framework is a very promising candidate for that requirement.
+In my opinion, the gRPC framework is a very promising candidate for that requirement.
 In a real world szenario a [security or authentication mechanism](https://www.grpc.io/docs/guides/auth/) is recommended.
 
-The gRPC Framework is quite new to me, but I guess, I will continue to work with that technology and share my further experiences.
+The gRPC framework is quite new to me, but I guess, I will continue to work with that technology and share my further experiences.
 Lastly, I would recommend to install protobuf-plugins for [Visual Studio](https://marketplace.visualstudio.com/items?itemName=mreu.ProtobufLanguageService) or [VS Code](https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3) to get syntax highlighting and things like that.
 
