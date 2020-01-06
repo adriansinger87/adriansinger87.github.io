@@ -19,6 +19,10 @@
           {% endif %}
           {% endfor %}
           {% endif %}
+          <li><a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-tooltip="Cookie Policy"
+                 href="#cookie-modal">
+            <i class="mdi mdi-cookie"></i></a>
+          </li>
         </ul>
       </div>
       <div class="hide-on-large-only">
@@ -29,11 +33,25 @@
     </div>
   </nav>
   <ul id="slide-out" class="sidenav">
-      <li><a class="waves-effect waves-light" href="{{ "/" | relative_url }}">Home</a></li>
+      <li><div class="user-view">
+          <div class="background background-side-nav">
+            <img src="{{ "/assets/img/banner_side.jpg" | relative_url }}">
+          </div>
+          <div class="white-text name valign-wrapper" ><i class="mdi mdi-account-circle left"></i>Adrian Singer</div>
+          <a href="mailto:adriansinger87@gmail.com?subject=Sin.Net" class="white-text email">adriansinger87@gmail.com</span></a>
+        </div></li>
+      <li><a class="waves-effect waves-light" href="{{ "/" | relative_url }}">
+        <i class="white-text mdi mdi-home"></i>Home</a>
+      </li>
+      <li><a class="waves-effect waves-light" href="{{ "/articles" | relative_url }}">
+        <i class="white-text mdi mdi-book-open-page-variant"></i>Articles</a>
+      </li>
+      <li><a class="waves-effect waves-light modal-trigger" href="#cookie-modal">
+        <i class="white-text mdi mdi-cookie"></i>Cookie Policy</a>
+      </li>
       <li>
         <div class="divider"></div>
       </li>
-      <li><a class="waves-effect waves-light" href="{{ "/articles" | relative_url }}">Articles</a></li>
       {% if page_paths %}
       {% for path in page_paths %}
       {% assign my_page = site.pages | where: "path", path | first %}

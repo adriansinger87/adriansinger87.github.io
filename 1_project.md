@@ -17,8 +17,23 @@ permalink: /project/
     <br /><br />
     The binaries are developed with <code>.NET Standard</code> so that every kind of .NET related project can use them.
     You can integrate the assemblies as <code>NuGet</code> packages, for more information please take a look into the <a target="_blank" href="https://www.nuget.org/packages?q=Sin.Net">NuGet Gallery</a>.
-    If you want to look into the <code>source code</code> itself, you can find the project on <a target="_blank" href="https://github.com/sin-net/Sin.Net">GitHub - Sin.Net</a>. 
+    If you want to look into the <code>source code</code> itself, you will find the project on GitHub. 
     </div>
+</div>
+
+<div class="row center">
+      <div class="col s12 m4 l3 offset-l1">
+        <a target="_blank" href="https://github.com/sin-net/Sin.Net" class="btn waves-effect waves-light truncate">
+          <i class="mdi mdi-github-circle left"></i>GitHub</a>
+      </div>
+      <div class="col s12 m4 l3">
+        <a target="_blank" href="https://sin-net.github.io/Sin.Net/" class="btn waves-effect waves-light truncate">
+          <i class="mdi mdi-library-books left"></i> Documentation</a>
+      </div>
+      <div class="col s12 m4 l3">
+        <a target="_blank" href="https://github.com/sin-net/Sin.Net/archive/master.zip" class="btn waves-effect waves-light truncate">
+      <i class="mdi mdi-download left"></i>Download .zip</a>
+  </div>
 </div>
 
 ##### Clean Architecture
