@@ -23,6 +23,7 @@
             $('#cookie-notice').remove();
             {% include owa.js %}
         } else if (readCookie(cookieName) != 'deny') {
+            $('#cookie-btn').css('opacity', '1');
             $('#cookie-notice').show();
             $('.tap-target').tapTarget('open');
         } else {

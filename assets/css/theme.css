@@ -305,3 +305,7 @@ g > path {
       opacity: 1;
     }
   }
+
+#cookie-btn {
+    opacity: 0;
+}
