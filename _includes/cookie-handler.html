@@ -1,20 +1,21 @@
 <script>
 
+    $(document).ready(function () {
         var cookieName = "cookie-notice-result";
 
-        $('#cookie-notice-accept').on("click",function() {
-            createCookie(cookieName,'accept',90);
+        $('#cookie-notice-accept').on("click", function () {
+            createCookie(cookieName, 'accept', 90);
             $('#cookie-notice').hide();
             location.reload();
         });
 
-        $('#cookie-notice-deny').on("click",function() {
-            createCookie(cookieName,'deny',31);
+        $('#cookie-notice-deny').on("click", function () {
+            createCookie(cookieName, 'deny', 31);
             $('#cookie-notice').hide();
             location.reload();
         });
 
-        if(readCookie(cookieName) == 'accept') {
+        if (readCookie(cookieName) == 'accept') {
             $('#cookie-notice').remove();
             {% include owa.js %}
         } else if (readCookie(cookieName) != 'deny') {
@@ -24,32 +25,33 @@
         } else {
             $('#cookie-notice').remove();
         }
-
-        // -- functions
-
-        function createCookie(name,value,days) {
-            var expires = "";
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days*24*60*60*1000));
-                expires = "; expires=" + date.toUTCString();
-            }
-            document.cookie = name + "=" + value + expires + "; path=/";
-        }
-
-        function readCookie(name) {
-            var nameEQ = name + "=";
-            var ca = document.cookie.split(';');
-            for(var i=0;i < ca.length;i++) {
-                var c = ca[i];
-                while (c.charAt(0)==' ') c = c.substring(1,c.length);
-                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-            }
-            return null;
-        }
-
-        function eraseCookie(name) {
-            createCookie(name,"",-1);
-        }
+    });
     
-    </script>
+    // -- functions
+
+    function createCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    function eraseCookie(name) {
+        createCookie(name, "", -1);
+    }
+
+</script>
