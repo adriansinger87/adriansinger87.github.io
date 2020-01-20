@@ -46,6 +46,14 @@ nav ul a {
     background-color:  #424242 !important;
 }
 
+.btn-flat {
+    background-color: transparent;
+}
+
+.btn-flat:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
 .tap-target { 
     background-color: #455a64;
 }
