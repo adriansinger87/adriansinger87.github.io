@@ -18,7 +18,7 @@ layout: default
         <p class="post-meta">
           <ul>
             {% for tag in tags %}
-            <li><span class="badge badge-tag">{{ tag }}</span></li>
+            <li><a href="{{ site.baseurl }}/tags#{{tag | downcase | replace:" ","-" }}"><span class="badge badge-tag">{{ tag }}</span></a></li>
             {% endfor %}
           </ul>
           <div class="thin">
