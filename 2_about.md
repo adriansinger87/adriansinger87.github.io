@@ -126,26 +126,25 @@ Unfortunately, this list isn't complete yet, but I promise that I will update it
 
 #### My Balance
 
-I spend my free time mostly with my two kids, my girlfriend and my friends.
-I also run a private webserver with some pages and services. - So I'm clearly a bit of a geek.
+I spend my free time mostly with my two kids, my wife and our friends.
+I also run a private webserver with some pages and services. - So I'm clearly a bit of a geek. :wink:
 
 <table class="striped">
     <tr>
-        <td>My own website - <a href="http://www.adrian-singer.de" target="_blank">adrian-singer.de</a> - of course, but the content has moved to GitHub.</td>
+        <td>My own website - <a href="https://www.adrian-singer.de" target="_blank">adrian-singer.de</a> - of course, but the content has moved to GitHub.</td>
     </tr>
     <tr>
-        <td>An own cloud-service, thanks to the guys of <a href="https://owncloud.org/" target="_blank">ownCloud.</a></td>
+        <td>A nextcloud service, thanks to the guys of <a href="https://nextcloud.com/" target="_blank">nextcloud</a>.</td>
     </tr>
     <tr>
         <td>The web page <a href="http://www.wargaz-vikings.de" target="_blank">wargaz-vikings.de</a> which shows one my hobbies.</td>
     </tr>
     <tr>
-        <td>The great blog <a href="http://www.julinaeht.de" target="_blank">julinaeht.de</a>, driven by my girlfriend.</td>
+        <td>The great blog <a href="https://hejjuli.de/" target="_blank">hejjuli.de</a>, driven by my wife.</td>
     </tr>
 </table>
 
 > **Living history**: I share this really fascinating hobby with lot's of good friends. Together we call us the **Wargaz-Vikings**.
 > The attentive reader was already on our website <a href="http://www.wargaz-vikings.de" target="_blank">wargaz-vikings.de</a>.
 > There you can find some impressions what's going on in our clan.
-> I will share private pictures only rarely, so that I don't have to update this kind of content very often. - And because this is not social media.
-<i class="mdi mdi-emoticon-outline" style="font-size: inherit"></i>
+> I will share private pictures only rarely, so that I don't have to update this kind of content very often. - And because this is not social media. :wink:

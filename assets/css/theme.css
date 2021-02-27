@@ -220,6 +220,11 @@ span.badge-tag {
  * END Materialize overrides 
  */
 
+ .emoji {
+    top: 5px;
+    position: relative;
+ }
+
 .site-logo {
     width: 40px;
     vertical-align: sub;

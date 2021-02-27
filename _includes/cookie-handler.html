@@ -1,20 +1,24 @@
 <script>
 
-    $(document).ready(function () {
-        var cookieName = "cookie-notice-result";
+    var cookieName = "cookie-notice-result";
 
-        $('#cookie-notice-accept').on("click", function () {
-            createCookie(cookieName, 'accept', 90);
-            $('#cookie-notice').hide();
-            location.reload();
-        });
+    $('#cookie-notice-accept').on("click", function () {
+        createCookie(cookieName, 'accept', 90);
+        $('#cookie-notice').hide();
+        location.reload();
+    });
 
-        $('#cookie-notice-deny').on("click", function () {
-            createCookie(cookieName, 'deny', 31);
-            $('#cookie-notice').hide();
-            location.reload();
-        });
+    $('#cookie-notice-deny').on("click", function () {
+        createCookie(cookieName, 'deny', 31);
+        $('#cookie-notice').hide();
+        location.reload();
+    });
 
+
+
+    // -- functions
+
+    function runCookieHandler() {
         if (readCookie(cookieName) == 'accept') {
             $('#cookie-notice').remove();
             {% include owa.js %}
@@ -25,9 +29,7 @@
         } else {
             $('#cookie-notice').remove();
         }
-    });
-    
-    // -- functions
+    }
 
     function createCookie(name, value, days) {
         var expires = "";

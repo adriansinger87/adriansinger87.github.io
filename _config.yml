@@ -1,4 +1,4 @@
-title: Sin.Net
+title: Singer
 claim: '{Code} [Blog] _Live_'
 author: Adrian Singer
 email: adriansinger87@gmail.com
@@ -19,3 +19,4 @@ permalink: /:categories/:title/
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
+  - jemoji

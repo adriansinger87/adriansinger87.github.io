@@ -1,5 +1,5 @@
-(function ($) {
-  $(function () {
+$(function () {
+
     M.AutoInit();
     $('.sidenav').sidenav();
     $('.modal').modal();
@@ -13,6 +13,6 @@
       $('.tap-target').tapTarget('open');
     });
 
-  }); // end of document ready
+    runCookieHandler(); // see cookie-handler.html
 
-})(jQuery); // end of jQuery name space
+});
