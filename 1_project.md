@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-description: Sin.Net is an open source project to build up clean architectures.
+description: TeleScope is an open source project to build up clean architectures.
 permalink: /project/
 ---
 
@@ -9,7 +9,7 @@ permalink: /project/
 
 <div class="row">
     <div class="col s12 m3 l2 center">
-        <img alt="Project Sin.Net" class="z-depth-3" width="60%" src="{{ "https://raw.githubusercontent.com/telescope-dotnet/telescope/main/images/logo-nuget.png" }}" />
+        <img alt="Project TeleScope" class="z-depth-3" width="60%" src="{{ "https://raw.githubusercontent.com/telescope-dotnet/telescope/main/images/logo-nuget.png" }}" />
     </div>
     <div class="col s12 m9 l10">
     <a href="https://github.com/telescope-dotnet/telescope" target="_blank">TeleScope</a> is an open source project that contains several assemblies to help you building your software with a <b>clean architecture</b> approach.
@@ -84,7 +84,7 @@ Now I will state out some principles for each layer. Please note that this list 
 Now, if you like this way of organizing your software architecture,
 please take a deeper look into the videos or blog posts of <a target="_blank" href="https://www.codingflow.net/">Jason Taylor</a>, because he explains that stuff with lots more details.
 And if you like to test some ready-to-go assemblies that follow these principles,
-please <a target="_blank" href="https://www.nuget.org/profiles/telescope-dotnet">download</a> the Sin.Net assemblies and use them according to your requirements.
+please <a target="_blank" href="https://www.nuget.org/profiles/telescope-dotnet">download</a> the TeleScope assemblies and use them according to your requirements.
 
 ---
 
