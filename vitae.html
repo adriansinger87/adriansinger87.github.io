@@ -1,0 +1,87 @@
+---
+layout: page
+permalink: /about/cv
+app: vitae
+---
+
+<div class="container">
+  <h1 class="page-title">My Curriculum Vitae</h1>
+
+  <div id="vitae-app">
+    <h5>Person</h5>
+    <div class="row">
+      <div class="col s12 m6 l8">
+        <table class="highlight">
+          <tr>
+            <td>My Name</td>
+            <td v-text="fullName"></td>
+          </tr>
+          <tr>
+            <td>Date of birth</td>
+            <td v-text="person.born"></td>
+          </tr>
+          <tr>
+            <td>Nationality</td>
+            <td v-text="person.nationality"></td>
+          </tr>
+          <tr>
+            <td>Martial Status</td>
+            <td> <span v-text="person.martialStatus"></span>, Kids: <span v-text="kidsAndAges"></span></td>
+          </tr>
+          <tr>
+            <td class="center"><i class="mdi mdi-web"></i></td>
+            <td><a target="_blank" v-bind:href="person.web">visit my personal website</a></td>
+          </tr>
+          <tr>
+            <td class="center"><i class="mdi mdi-linkedin-box"></i></td>
+            <td><a target="_blank" v-bind:href="person.github">visit my LinkedIn profile</a></td>
+          </tr>
+          <tr>
+            <td class="center"><i class="mdi mdi-github-circle"></i></td>
+            <td><a target="_blank" v-bind:href="person.github">visit my GitHub profile</a></td>
+          </tr>
+        </table>
+
+      </div>
+      <div class="col s12 m6 l4">
+        <img alt="me" width="100%" class="z-depth-3" src="{{ "/assets/img/me.jpg" | relative_url }}" />
+      </div>
+    </div>
+
+    <h5>Skills</h5>
+
+    <h6>Languages</h6>
+    <table class="highlight">
+      <tr v-for="skill in langSkills">
+        <td v-text="skill.name"></td>
+        <td width="20%">
+          <span class="tooltipped" data-position="top" v-bind:data-tooltip="castRateTooltip(skill.rate)">
+            <i v-bind:class="castRateMdi(skill.rate)"></i></span>
+        </td>
+      </tr>
+    </table>
+
+    <h6>Technologies</h6>
+    <table class="highlight">
+      <tr v-for="skill in techSkills">
+        <td v-text="skill.name"></td>
+        <td width="20%">
+          <span class="tooltipped" data-position="top" v-bind:data-tooltip="castRateTooltip(skill.rate)">
+            <i v-bind:class="castRateMdi(skill.rate)"></i></span>
+        </td>
+      </tr>
+    </table>
+
+    <h6>Miscellaneous</h6>
+    <table class="highlight">
+      <tr v-for="skill in miscSkills">
+        <td v-text="skill.name"></td>
+        <td width="20%">
+          <span class="tooltipped" data-position="top" v-bind:data-tooltip="castRateTooltip(skill.rate)">
+            <i v-bind:class="castRateMdi(skill.rate)"></i></span>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+</div>

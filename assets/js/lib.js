@@ -1,4 +1,9 @@
 
+
+var TECH_SKILL = "Technology";
+var MISC_SKILL = "Miscellaneous";
+var LANG_SKILL = "Languages";
+
 function copyTextToClipboard(text) {
 
     var myText = text;

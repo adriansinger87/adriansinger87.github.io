@@ -292,6 +292,30 @@ g > path {
 
 /* meramid overrides - END */
 
+
+/* GitHub gist embedded */
+
+.gist {
+    color: #eceff1 !important;
+}
+.gist .gist-file {
+    border: 1px solid #03a9f4 !important;
+}
+.gist .gist-data { 
+    background-color: rgba(0,0,0,0.3) !important;
+}
+
+.gist .gist-meta { 
+    background-color: rgba(255,255,255,0.0) !important;
+    color: #eceff1 !important;
+}
+
+.gist .gist-meta a { 
+    color: #ffc107 !important;
+}
+
+/* GitHub gist embedded - END */
+
 .comment-img {
     width: 32px;
     margin-right: 0.7em;
