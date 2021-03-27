@@ -1,12 +1,18 @@
 class VitaeVue {
 
     constructor(selector, vitae) {
+        var self = this;
         this.vue = new Vue({
             el: selector,
             data: vitae,
             computed: {
                 fullName: function() {
                     return this.person.firstName + " " + this.person.lastName;
+                },
+                address: function() {
+                    return this.person.location.address + "<br />" + 
+                        this.person.location.zipCode + ", " + 
+                        this.person.location.city
                 },
                 kidsAndAges: function() {
 
@@ -26,25 +32,26 @@ class VitaeVue {
                         return ages;
                     }
                 },
+                careerJobs: function() {
+                    return self.filterCareer(this.career, CATEGORY_JOB);
+                },
+                careerStudies: function() {
+                    return self.filterCareer(this.career, CATEGORY_STUDY);
+                },
                 techSkills: function() {
-                    return this.skills.filter((s) => {
-                        return s.category === TECH_SKILL;
-                    });
+                    return self.filterSkills(this.skills, TECH_SKILL);
                 },
                 langSkills: function() {
-                    return this.skills.filter((s) => {
-                        return s.category === LANG_SKILL;
-                    });
+                    return self.filterSkills(this.skills, LANG_SKILL);
                 },
                 miscSkills: function() {
-                    return this.skills.filter((s) => {
-                        return s.category === MISC_SKILL;
-                    });
+                    return self.filterSkills(this.skills, MISC_SKILL);
                 }
             },
             methods: {
-                castRateTooltip: this.castRateTooltip,
-                castRateMdi: this.castRateMdi
+                castRateTooltip: self.castRateTooltip,
+                castRateMdi: self.castRateMdi,
+                castDuration: self.castDuration
             }
         });
     }
@@ -52,7 +59,36 @@ class VitaeVue {
     // -- functions 
 
     getComponent() {
-        return this.vue;
+        return this.vue;         
+    }
+
+    castDuration(dateString) {
+        if (dateString === undefined) {
+            return "present";
+        }   
+
+        var d = new Date(dateString);
+        return (d.getMonth()+1) + " / " + d.getFullYear();
+    }
+
+    filterCareer(career, category) {
+        return career
+        .filter((c) => {
+            return c.category === category;
+        });
+    }
+
+    filterSkills(skills, category) {
+        return skills
+            .filter((s) => {
+                return s.category === category;
+            })
+            .sort((a, b) => {
+                if (a.rate == undefined || b.rate == undefined)     return 0;
+                else if (a.rate < b.rate)                           return 1;
+                else if (a.rate > b.rate)                           return -1;
+                else                                                return 0;
+            });
     }
 
     castRateTooltip(rate) {

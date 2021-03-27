@@ -1,8 +1,10 @@
 
+var CATEGORY_JOB = "job";
+var CATEGORY_STUDY = "studies";
 
-var TECH_SKILL = "Technology";
-var MISC_SKILL = "Miscellaneous";
-var LANG_SKILL = "Languages";
+var TECH_SKILL = "technology";
+var MISC_SKILL = "miscellaneous";
+var LANG_SKILL = "languages";
 
 function copyTextToClipboard(text) {
 

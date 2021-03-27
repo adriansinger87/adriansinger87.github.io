@@ -220,6 +220,10 @@ span.badge-tag {
  * END Materialize overrides 
  */
 
+ .no-margin-bottom {
+    margin-bottom: 0;
+ }
+
  .emoji {
     top: 5px;
     position: relative;
@@ -345,4 +349,17 @@ g > path {
 
 #cookie-btn {
     opacity: 0;
+}
+
+.career td, .person td {
+    vertical-align: top;
+}
+.company {
+    font-weight: 700;
+    font-size: 1.15em;
+}
+
+.activities li {
+    list-style-type: square !important;
+    margin-left: 2em;
 }

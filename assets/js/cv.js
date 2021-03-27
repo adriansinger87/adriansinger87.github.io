@@ -26,6 +26,12 @@ $(function () {
                 firstName: "Adrian",
                 lastName: "Singer",
                 nationality: "German",
+                location: {
+                    state: "Germany",
+                    city: "Chemnitz",
+                    address: "Hübschmannstr. 3",
+                    zipCode: "09112"
+                },
                 born: "1987-04-20",
                 martialStatus: "Married",
                 kids: [{name: "Mika", born: "2015-06-04"}, {name: "Jaro", born: "2017-08-13"}], 
@@ -33,10 +39,47 @@ $(function () {
                 linkedin: "https://www.linkedin.com/in/adrian-singer-chemnitz/",
                 github: "https://github.com/adriansinger87"
             },
+            career: [
+                {
+                    category: CATEGORY_JOB,
+                    start: "2015-06-01",
+                    name: "Fraunhofer-Institute for forming technology and tooling machines",
+                    department: "Digitalization in Production",
+                    activities: [
+                        "scientific staff",
+                        "project and program manager",
+                        "group leader 'Information Management and Communication Systems'"]
+                },
+                {
+                    category: CATEGORY_JOB,
+                    start: "2014-10-01",
+                    end: "2015-03-31",
+                    name: "Micas AG",
+                    department: "Research and Develompment",
+                    activities: ["Deputy Head of Development"]
+                },
+                {
+                    category: CATEGORY_JOB,
+                    start: "2011-10-01",
+                    end: "2014-09-30",
+                    name: "Hochschule Mittweida - University of Applied Sciences",
+                    department: "Professorship of communication technology / radio technology",
+                    activities: ["PhD student and scientific staff"]
+                },
+                {
+                    category: CATEGORY_STUDY,
+                    start: "2005-09-01",
+                    end: "2011-09-30",
+                    name: "Hochschule Mittweida - University of Applied Sciences",
+                    activities: [
+                        "Master of Science 'Industrial Management' (grade 1.4)", 
+                        "Graduated Engineer 'Mulimedia Technology' (grade 1.6)"]
+                }
+            ],
             skills: [
                 {
                     category: LANG_SKILL,
-                    name: "German",
+                    name: "German (native language)",
                     rate: 5/5
                 },
                 {
@@ -46,13 +89,18 @@ $(function () {
                 },
                 {
                     category: MISC_SKILL,
-                    name: "Office",
+                    name: "Office tools",
                     rate: 5/5
                 },
                 {
                     category: MISC_SKILL,
-                    name: "Project Management",
+                    name: "Project Management (PMP and Agile)",
                     rate: 4.5/5
+                },
+                {
+                    category: MISC_SKILL,
+                    name: "2D Graphics and Design",
+                    rate: 4/5
                 },
                 {
                     category: TECH_SKILL,
@@ -61,23 +109,29 @@ $(function () {
                 },
                 {
                     category: TECH_SKILL,
+                    name: "REST APIs with ASP.NET Core",
+                    rate: 4/5
+                },
+                {
+                    category: TECH_SKILL,
                     name: "C++",
                     rate: 3/5
                 },
                 {
                     category: TECH_SKILL,
-                    name: "JavaScript",
-                    rate: 3.5/5
+                    name: "Git, GitHub, GitLab",
+                    rate: 4.25/5
                 },
                 {
                     category: TECH_SKILL,
-                    name: "HTML and CSS",
+                    name: "JavaScript, HTML and CSS",
                     rate: 3.75/5
                 },
+               
                 {
                     category: TECH_SKILL,
-                    name: "REST APIs with ASP.NET Core",
-                    rate: 4/5
+                    name: "Protocols: HTTP, MQTT, TCP, gRPC",
+                    rate: 3.5/5
                 },
                 {
                     category: TECH_SKILL,
@@ -86,7 +140,7 @@ $(function () {
                 },
                 {
                     category: TECH_SKILL,
-                    name: "Java",
+                    name: "Java, Scala",
                     rate: 1/5
                 },
             ]
