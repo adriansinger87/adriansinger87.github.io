@@ -2,7 +2,11 @@ $(function () {
 
     // -- fields
 
-    // processing
+    var vitae;
+    var markdown;
+    var json;
+
+    // -- processing
 
     init();
 
@@ -10,20 +14,41 @@ $(function () {
 
     function init() {
         $(document).ready(function () {
-            var vitae = initVitae();
-            vue = new VitaeVue('#vitae-app', vitae)
-                .getComponent();
-            var jsonString = JSON.stringify(vitae, null, 4);
+            vitae = initVitae();
+            json = JSON.stringify(vitae, null, 4);
+            markdown = new VitaeMarkdown(vitae).getMarkdown();
 
-            $("#vitae-code").text(jsonString);
-            var markdown = new VitaeMarkdown(vitae).getMarkdown();
+            new VitaeVue('#vitae-app', vitae).getComponent();
+            $("#vitae-code").text(json);  
             $("#vitae-markdown").text(markdown);
+
+            initActions();
 
             Vue.nextTick(function() {
                 hljs.highlightAll();
                 $('.tooltipped').tooltip();
                 $('.tabs').tabs();
             });
+        });
+    }
+
+    function initActions() {
+        $(".download-markdown").safeBind(
+            "click", function() {
+                download(markdown, "cv_adrian_singer.md");
+        });
+        $(".copy-markdown").safeBind(
+            "click", function() {
+                copyTextToClipboard(markdown);
+        });
+
+        $(".download-json").safeBind(
+            "click", function() {
+                download(json, "cv_adrian_singer.json");
+        });
+        $(".copy-json").safeBind(
+            "click", function() {
+                copyTextToClipboard(json);
         });
     }
 
@@ -172,5 +197,19 @@ $(function () {
                 }
             ]
         }
+    }
+
+    function download(text, filename) {
+        M.toast({html: 'Downloading...'})
+
+        var link = document.createElement('a');
+        link.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+        link.setAttribute('download', filename);     
+        link.style.display = 'none';
+        document.body.appendChild(link);
+      
+        link.click();
+      
+        document.body.removeChild(link);
     }
 });

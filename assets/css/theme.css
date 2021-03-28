@@ -376,6 +376,9 @@ g > path {
 #cookie-btn {
     opacity: 0;
 }
+/* table.career tr td {
+    width: 100px !important;
+} */
 
 .career td, .person td {
     vertical-align: top;

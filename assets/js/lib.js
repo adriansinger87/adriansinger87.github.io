@@ -6,6 +6,10 @@ var TECH_SKILL = "technology";
 var MISC_SKILL = "miscellaneous";
 var LANG_SKILL = "languages";
 
+$.fn.safeBind = function (type, func) {
+    this.off(type).on(type, func);
+};
+
 function copyTextToClipboard(text) {
 
     var myText = text;
