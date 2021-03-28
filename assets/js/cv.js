@@ -10,11 +10,14 @@ $(function () {
 
     function init() {
         $(document).ready(function () {
-            vue = new VitaeVue('#vitae-app', initVitae())
-            .getComponent();
-
+            var vitae = initVitae();
+            vue = new VitaeVue('#vitae-app', vitae)
+                .getComponent();
+            var jsonString = JSON.stringify(vitae, null, 4);
+            $("#vitae-code").text(jsonString);
             Vue.nextTick(function() {
                 $('.tooltipped').tooltip();
+                hljs.highlightAll();
             });
         });
     }
@@ -72,8 +75,8 @@ $(function () {
                     end: "2011-09-30",
                     name: "Hochschule Mittweida - University of Applied Sciences",
                     activities: [
-                        "Master of Science 'Industrial Management' (grade 1.4)", 
-                        "Graduated Engineer 'Mulimedia Technology' (grade 1.6)"]
+                        "Industrial Management, Master of Science (grade 1.4)", 
+                        "Mulimedia Technology, Graduate Engineer (grade 1.6)"]
                 }
             ],
             skills: [
@@ -84,22 +87,7 @@ $(function () {
                 },
                 {
                     category: LANG_SKILL,
-                    name: "English",
-                    rate: 4/5
-                },
-                {
-                    category: MISC_SKILL,
-                    name: "Office tools",
-                    rate: 5/5
-                },
-                {
-                    category: MISC_SKILL,
-                    name: "Project Management (PMP and Agile)",
-                    rate: 4.5/5
-                },
-                {
-                    category: MISC_SKILL,
-                    name: "2D Graphics and Design",
+                    name: "English (fluent speech and writing)",
                     rate: 4/5
                 },
                 {
@@ -127,11 +115,15 @@ $(function () {
                     name: "JavaScript, HTML and CSS",
                     rate: 3.75/5
                 },
-               
                 {
                     category: TECH_SKILL,
                     name: "Protocols: HTTP, MQTT, TCP, gRPC",
                     rate: 3.5/5
+                },
+                {
+                    category: TECH_SKILL,
+                    name: "Databases: relational, time series, graph based",
+                    rate: 2.5/5
                 },
                 {
                     category: TECH_SKILL,
@@ -143,6 +135,31 @@ $(function () {
                     name: "Java, Scala",
                     rate: 1/5
                 },
+                {
+                    category: MISC_SKILL,
+                    name: "Office tools",
+                    rate: 5/5
+                },
+                {
+                    category: MISC_SKILL,
+                    name: "Project Management (PMP and Agile)",
+                    rate: 4.5/5
+                },
+                {
+                    category: MISC_SKILL,
+                    name: "Clean Code and Clean Architecture Principles",
+                    rate: 4.5/5
+                },
+                {
+                    category: MISC_SKILL,
+                    name: "Team spirit and leadership",
+                    rate: 4/5
+                },
+                {
+                    category: MISC_SKILL,
+                    name: "2D Graphics and Design",
+                    rate: 4/5
+                }
             ]
         }
     }

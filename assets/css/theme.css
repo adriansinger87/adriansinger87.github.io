@@ -216,6 +216,32 @@ span.badge-tag {
     box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
 }
 
+.tabs {
+    background-color: rgba(100,100,100,0.3);
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: rgba(248, 195, 19, 0.1);
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: rgba(255,255,255,0.1);
+    color: #ffc107;
+}
+.tabs .tab a, .tabs .tab a {
+    background-color: transparent;
+    color: #03a9f4;
+}
+
+.tabs .tab.disabled a, .tabs .tab.disabled a:hover {
+    color: rgba(255,255,255,0.4);
+    cursor: default;
+}
+
+.tabs .indicator {
+    background-color: rgba(255,255,255,0.2);
+}
+
 /* 
  * END Materialize overrides 
  */

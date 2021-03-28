@@ -68,7 +68,7 @@ class VitaeVue {
         }   
 
         var d = new Date(dateString);
-        return (d.getMonth()+1) + " / " + d.getFullYear();
+        return (d.getMonth()+1) + "/" + d.getFullYear();
     }
 
     filterCareer(career, category) {
