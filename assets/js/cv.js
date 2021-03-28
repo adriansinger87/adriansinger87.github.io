@@ -14,7 +14,11 @@ $(function () {
             vue = new VitaeVue('#vitae-app', vitae)
                 .getComponent();
             var jsonString = JSON.stringify(vitae, null, 4);
+
             $("#vitae-code").text(jsonString);
+            var markdown = new VitaeMarkdown(vitae).getMarkdown();
+            $("#vitae-markdown").text(markdown);
+
             Vue.nextTick(function() {
                 $('.tooltipped').tooltip();
                 hljs.highlightAll();
@@ -152,13 +156,18 @@ $(function () {
                 },
                 {
                     category: MISC_SKILL,
-                    name: "Team spirit and leadership",
+                    name: "Team spirit",
+                    rate: 5/5
+                },
+                {
+                    category: MISC_SKILL,
+                    name: "Leadership",
                     rate: 4/5
                 },
                 {
                     category: MISC_SKILL,
                     name: "2D Graphics and Design",
-                    rate: 4/5
+                    rate: 3.75/5
                 }
             ]
         }

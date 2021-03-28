@@ -8,13 +8,26 @@ app: vitae
 
 <div class="row">
   <div class="col s12">
-    <ul class="tabs">
-      <li class="tab col s3"><a href="#view">View</a></li>
-      <li class="tab col s3"><a href="#code">Code</a></li>
+    <ul class="tabs tabs-fixed-width">
+      <li class="tab col s3">
+        <a class="hide-on-small-only" href="#view"><i class="mdi mdi-responsive left"></i>View</a>
+        <a class="show-on-small-only" href="#view"><i class="mdi mdi-responsive"></i></a>
+      </li>
+      <li class="tab col s3">
+        <a class="hide-on-small-only" href="#md"><i class="mdi mdi-language-markdown-outline left"></i>Markdown</a>
+        <a class="show-on-small-only" href="#md"><i class="mdi mdi-language-markdown-outline"></i></a>
+      </li>
+      <li class="tab col s3">
+        <a class="hide-on-small-only" href="#code"><i class="mdi mdi-code-json left"></i>Code</a>
+        <a class="show-on-small-only" href="#code"><i class="mdi mdi-code-json"></i></a>
+      </li>
     </ul>
   </div>
   <div id="view" class="col s12">
     {% include vitae/vitaeView.html %}
+  </div>
+  <div id="md" class="col s12">
+    {% include vitae/vitaeMarkdown.html %}
   </div>
   <div id="code" class="col s12">
     {% include vitae/vitaeCode.html %}
