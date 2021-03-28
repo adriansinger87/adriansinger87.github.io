@@ -20,8 +20,9 @@ $(function () {
             $("#vitae-markdown").text(markdown);
 
             Vue.nextTick(function() {
-                $('.tooltipped').tooltip();
                 hljs.highlightAll();
+                $('.tooltipped').tooltip();
+                $('.tabs').tabs();
             });
         });
     }

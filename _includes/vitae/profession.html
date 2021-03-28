@@ -1,8 +1,12 @@
 <td>
-    <i style="font-size: inherit;" class="mdi mdi-arrow-expand-right left"></i><span
-        v-text="castDuration(c.start)"></span><br />
-    <i style="font-size: inherit;" class="mdi mdi-arrow-collapse-right left"></i><span
-        v-text="castDuration(c.end)"></span>
+    <div>
+        <i style="font-size: inherit;" class="mdi mdi-arrow-expand-right left"></i>
+        <span v-text="castDuration(c.start)"></span>
+    </div>
+    <div>
+        <i style="font-size: inherit;" class="mdi mdi-arrow-collapse-right left"></i>
+        <span v-text="castDuration(c.end)"></span>
+    </div>
 </td>
 <td>
     <div class="company" v-text="c.name"></div>
