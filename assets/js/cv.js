@@ -33,6 +33,24 @@ $(function () {
     }
 
     function initActions() {
+
+        $(".skill-tip").safeBind(
+            "click", function(event) {
+                var html = "<span>"+ event.currentTarget.dataset.tip +"</span><a class='btn-flat toast-action'>OK</a>";
+                M.toast({
+                    html: html,
+                    classes: "skill-toast",
+                    displayLength: 6000
+                });
+
+                $(".toast-action").safeBind(
+                    "click", function() {
+                        var toast = document.querySelector('.toast');
+                        var toast = M.Toast.getInstance(toast);
+                        toast.dismiss();
+                    });
+        });
+
         $(".download-markdown").safeBind(
             "click", function() {
                 download(markdown, "cv_adrian_singer.md");
@@ -112,17 +130,20 @@ $(function () {
             skills: [
                 {
                     category: LANG_SKILL,
-                    name: "German (native language)",
+                    name: "German",
+                    tip: "native language",
                     rate: 5/5
                 },
                 {
                     category: LANG_SKILL,
-                    name: "English (fluent speech and writing)",
+                    name: "English",
+                    tip: "fluent speech and writing",
                     rate: 4/5
                 },
                 {
                     category: TECH_SKILL,
                     name: "C# and .NET",
+                    tip: "since 2008, includes .NET Framework, .NET Core and .NET Standard",
                     rate: 5/5
                 },
                 {
@@ -133,16 +154,19 @@ $(function () {
                 {
                     category: TECH_SKILL,
                     name: "C++",
+                    tip: "since 2011",
                     rate: 3/5
                 },
                 {
                     category: TECH_SKILL,
                     name: "Git, GitHub, GitLab",
+                    tip: "daily work and API knowledge since 2016",
                     rate: 4.25/5
                 },
                 {
                     category: TECH_SKILL,
                     name: "JavaScript, HTML and CSS",
+                    tip: "including frameworks like jQuery, Angular, VueJS or d3js",
                     rate: 3.75/5
                 },
                 {
@@ -172,7 +196,8 @@ $(function () {
                 },
                 {
                     category: MISC_SKILL,
-                    name: "Project Management (PMP and Agile)",
+                    name: "Project Management",
+                    tip: "includes PMP advanced trainings and Agile workflows",
                     rate: 4.5/5
                 },
                 {
@@ -183,16 +208,19 @@ $(function () {
                 {
                     category: MISC_SKILL,
                     name: "Team spirit",
+                    tip: "strong communication ans supportive skills",
                     rate: 5/5
                 },
                 {
                     category: MISC_SKILL,
                     name: "Leadership",
+                    tip: "leading a DevOps team since 2020",
                     rate: 4/5
                 },
                 {
                     category: MISC_SKILL,
                     name: "2D Graphics and Design",
+                    tip: "Adobe Photoshop, CorelDRAW and Corel PHOTO-PAINT",
                     rate: 3.75/5
                 }
             ]

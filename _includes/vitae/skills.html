@@ -1,4 +1,8 @@
-<td v-text="skill.name"></td>
+<td>
+  <span v-text="skill.name"></span>
+  <a v-if="skill.tip" v-bind:data-tip="skill.tip" class="skill-tip btn-flat blue-grey-text text-lighten-5">
+    <i class="mdi mdi-information-outline"></i></a>
+</td>
 <td width="20%">
   <span class="tooltipped" data-position="top" v-bind:data-tooltip="castRateTooltip(skill.rate)">
     <i v-bind:class="castRateMdi(skill.rate)"></i></span>

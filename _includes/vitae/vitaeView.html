@@ -83,7 +83,7 @@
   <div class="row">
     <div class="col s12">
       <table class="highlight">
-        <tr v-for="skill in langSkills">
+        <tr v-for="(skill, index) in langSkills">
           {% include vitae/skills.html %}
         </tr>
       </table>
@@ -94,7 +94,7 @@
   <div class="row">
     <div class="col s12">
       <table class="highlight">
-        <tr v-for="skill in techSkills">
+        <tr v-for="(skill, index) in techSkills">
           {% include vitae/skills.html %}
         </tr>
       </table>
@@ -105,7 +105,7 @@
   <div class="row">
     <div class="col s12">
       <table class="highlight">
-        <tr v-for="skill in miscSkills">
+        <tr v-for="(skill, index) in miscSkills">
           {% include vitae/skills.html %}
         </tr>
       </table>

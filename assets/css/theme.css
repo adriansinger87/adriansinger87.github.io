@@ -392,3 +392,12 @@ g > path {
     list-style-type: square !important;
     margin-left: 2em;
 }
+
+.skill-toast {
+    background-color: #1565c0;
+}
+
+.toast .toast-action {
+    margin-right: -17px !important;
+    color: #eceff1;
+}
