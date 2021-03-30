@@ -208,7 +208,7 @@ $(function () {
                 {
                     category: MISC_SKILL,
                     name: "Team spirit",
-                    tip: "strong communication ans supportive skills",
+                    tip: "strong communication and supportive skills",
                     rate: 5/5
                 },
                 {
