@@ -3,6 +3,12 @@
   <a v-if="skill.tip" v-bind:data-tip="skill.tip" class="skill-tip btn-flat blue-grey-text text-lighten-5">
     <i class="mdi mdi-information-outline"></i></a>
 </td>
-<td width="20%">
-  {% include vitae/skillPie.html %}
+<td width="25%">
+  <div class="hide-on-large-only">
+    {% include vitae/skillPie.html %}
+  </div>
+  <div class="hide-on-med-and-down progress-margin">
+    {% include vitae/skillBar.html %}
+  </div>
+
 </td>

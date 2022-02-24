@@ -51,7 +51,9 @@ class VitaeVue {
             methods: {
                 castRateTooltip: self.castRateTooltip,
                 castRateMdi: self.castRateMdi,
-                castDuration: self.castDuration
+                castDuration: self.castDuration,
+                castRateColor: self.castRateColor
+                
             }
         });
     }
@@ -108,5 +110,20 @@ class VitaeVue {
         else if (percent < 100)     mdiClass += "mdi-circle-slice-7 green-text";
         else                        mdiClass += "mdi-circle-slice-8 light-green-text text-accent-4";
         return mdiClass;
+    }
+
+    castRateColor(rate) {
+        var percent = rate * 100;
+        var hex = "#";
+        if (percent == 0)           hex += "ff5722";
+        else if (percent < 14)      hex += "607d8b";
+        else if (percent < 28)      hex += "448aff";
+        else if (percent < 42)      hex += "00bcd4";
+        else if (percent < 56)      hex += "009688";
+        else if (percent < 70)      hex += "cddc39";
+        else if (percent < 84)      hex += "8bc34a";
+        else if (percent < 100)     hex += "4caf50";
+        else                        hex += "64dd17";
+        return hex;
     }
 }

@@ -143,7 +143,7 @@ $(function () {
                 {
                     category: TECH_SKILL,
                     name: "C# and .NET",
-                    tip: "since 2008, includes .NET Framework, .NET Core and .NET Standard",
+                    tip: "since 2008, .NET Framework 2.0 till .NET 6",
                     rate: 5/5
                 },
                 {
@@ -171,18 +171,18 @@ $(function () {
                 },
                 {
                     category: TECH_SKILL,
-                    name: "Protocols: HTTP, MQTT, TCP, gRPC",
-                    rate: 3.5/5
+                    name: "Protocols: HTTP, MQTT, TCP, gRPC, OPC UA",
+                    rate: 3.75/5
                 },
                 {
                     category: TECH_SKILL,
                     name: "Databases: relational, time series, graph based",
-                    rate: 2.5/5
+                    rate: 1.5/5
                 },
                 {
                     category: TECH_SKILL,
                     name: "GraphQL",
-                    rate: 1.5/5
+                    rate: 2.5/5
                 },
                 {
                     category: TECH_SKILL,
@@ -197,7 +197,7 @@ $(function () {
                 {
                     category: MISC_SKILL,
                     name: "Project Management",
-                    tip: "includes PMP advanced trainings and Agile workflows",
+                    tip: "includes PMP advanced trainings and agile workflows (SCRUM, KANBAN)",
                     rate: 4.5/5
                 },
                 {

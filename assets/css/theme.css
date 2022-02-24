@@ -386,7 +386,7 @@ g > path {
 .company {
     font-weight: 700;
     font-size: 1.15em;
-}
+}   
 
 .activities li {
     list-style-type: square !important;
@@ -400,4 +400,11 @@ g > path {
 .toast .toast-action {
     margin-right: -17px !important;
     color: #eceff1;
+}
+
+.progress {
+    background-color: #37474f;
+}
+.progress-margin {
+    margin-right: 1em;
 }
