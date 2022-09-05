@@ -93,7 +93,15 @@ $(function () {
             career: [
                 {
                     category: CATEGORY_JOB,
+                    start: "2022-09-01",
+                    name: "Staffbase",
+                    department: "Engineering Product global",
+                    activities: ["Technical Program Manager"]
+                },
+                {
+                    category: CATEGORY_JOB,
                     start: "2015-06-01",
+                    end: "2022-08-31",
                     name: "Fraunhofer-Institute for forming technology and tooling machines",
                     department: "Digitalization in Production",
                     activities: [
