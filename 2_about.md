@@ -15,11 +15,12 @@ My name is Adrian and I live and work in Chemnitz.
         <img alt="me" width="100%" class="z-depth-3" src="{{ "/assets/img/me.jpg" | relative_url }}" />
     </div>
     <div class="col s12 m9 l10">
-    <p>I work since July 2015 as scientific staff at the <a target="_blank" href="https://www.iwu.fraunhofer.de/">Fraunhofer-Institute for forming technology and tooling machines</a>.
-    My main job is managing software projects in the factory domain for research or industrial applications.
-    I also develop applications and software architectures within cross functional teams. Sometimes my projects find their way to the open source community.
-    </p>
-    <p>Visit my <a href="{{ "/about/cv" | relative_url }}">Curriculum Vitae</a>.</p>
+      <p>Visit my <a href="{{ "/about/cv" | relative_url }}">Curriculum Vitae</a>.</p>
+      <p>I work since September 2022 at <a target="_blank" href="https://staffbase.com/">Staffbase</a> which is the first startup in eastern germany 
+      ranked as <a target="_blank" href="https://staffbase.com/de/pressemitteilungen/naechstes-deutsches-einhorn-kommt-aus-chemnitz-staffbase-erhaelt-106-mio-euro/">UNICORN</a> :blue_heart: :yellow_heart:.
+      </p>
+      <p>Before that, I've worked for seven years as scientific staff and group-leader at the <a target="_blank" href="https://www.iwu.fraunhofer.de/">Fraunhofer-Institute for forming technology and tooling machines</a>.
+      </p>
     </div>
 </div>
 
