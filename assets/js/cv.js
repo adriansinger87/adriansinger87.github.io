@@ -95,7 +95,7 @@ $(function () {
                     category: CATEGORY_JOB,
                     start: "2022-09-01",
                     name: "Staffbase",
-                    department: "Engineering",
+                    department: "Product Organization",
                     activities: ["Technical Program Manager"]
                 },
                 {
