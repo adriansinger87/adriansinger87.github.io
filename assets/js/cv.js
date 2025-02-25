@@ -96,7 +96,11 @@ $(function () {
                     start: "2022-09-01",
                     name: "Staffbase",
                     department: "Product Organization",
-                    activities: ["Technical Program Manager"]
+                    activities: [
+                        "Technical Program Manager",
+                        "Engineering Lead",
+                        "Engineering Manager"
+                        ]
                 },
                 {
                     category: CATEGORY_JOB,
@@ -152,7 +156,7 @@ $(function () {
                     category: TECH_SKILL,
                     name: "C# and .NET",
                     tip: "since 2008, .NET Framework 2.0 till .NET 6",
-                    rate: 5/5
+                    rate: 4/5
                 },
                 {
                     category: TECH_SKILL,
@@ -222,7 +226,7 @@ $(function () {
                 {
                     category: MISC_SKILL,
                     name: "Leadership",
-                    tip: "leading a DevOps team since 2020",
+                    tip: "Servant Leadership, leading a cross-functional teams since 2020",
                     rate: 4/5
                 },
                 {
